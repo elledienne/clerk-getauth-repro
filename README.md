@@ -19,3 +19,5 @@ To reproduce it yourself:
 - download the repo & install deps
 - login via password
 - verify that after login, the user is redirected to `/ssr-demo` and immediately redirected back to the login page - this happens because `getAuth` doesn't detect the authenticated user and therefore redirects back to the login page
+
+![Shot Arc -2024-05-02 at 12 56 57](https://github.com/elledienne/clerk-getauth-repro/assets/3903093/39b60533-776c-47fc-b945-f94140fd0c6b)
