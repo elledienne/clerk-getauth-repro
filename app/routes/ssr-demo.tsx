@@ -22,7 +22,7 @@ export const loader: LoaderFunction = async (args) => {
 
 export default function SsrDemoPage() {
   const { isSignedIn, isLoaded, user } = useUser();
-  const { posts } = useLoaderData();
+  const { posts } = useLoaderData<typeof loader>();
 
   return (
     <div className="container">

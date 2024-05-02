@@ -1,13 +1,13 @@
 import type { DataFunctionArgs, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from "@remix-run/react";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
-import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
+import { ClerkApp } from "@clerk/remix";
 import styles from "~/styles/shared.css";
 import Header from "~/components/Header";
 
-export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
-};
+// export const meta: MetaFunction = () => {
+//   return { title: "New Remix App" };
+// };
 
 export function links() {
   return [
@@ -52,4 +52,4 @@ function App() {
 
 export default ClerkApp(App);
 
-export const CatchBoundary = ClerkCatchBoundary();
+// export const CatchBoundary = ClerkCatchBoundary();

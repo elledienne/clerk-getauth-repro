@@ -17,7 +17,7 @@ export const loader: LoaderFunction = async (args) => {
 };
 
 export default function SsrDemoPage() {
-  const { serialisedUser } = useLoaderData();
+  const { serialisedUser } = useLoaderData<typeof loader>();
 
   return (
     <div className="container">
